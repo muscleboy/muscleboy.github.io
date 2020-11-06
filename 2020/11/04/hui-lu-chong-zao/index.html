@@ -336,7 +336,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-05
+                    2020-11-04
                 </div>
                 
 
@@ -345,7 +345,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    148
+                    43
                 </div>
                 
 
@@ -367,34 +367,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>为了2021的春招，又重新捡起了博客，记录一些成为Top Javaer过程中遇到的坑和事</p>
+                <p>为了2021的春招，又重新捡起了博客，记录一些成为Top Javaor过程中遇到的坑和事</p>
 <p>剑指offer，LeetCode刷起来</p>
 <p>Java</p>
 <p>Redis</p>
 <p>MySQL</p>
 <p>计网</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">shortestToChar</span><span class="token punctuation">(</span>String S<span class="token punctuation">,</span> <span class="token keyword">char</span> C<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> res <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>S<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 双指针</span>
-        <span class="token keyword">int</span> cur <span class="token operator">=</span> S<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> pre <span class="token operator">=</span> cur<span class="token punctuation">;</span>
-
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> S<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>S<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">==</span> C<span class="token punctuation">)</span><span class="token punctuation">{</span>
-                res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">// 上一个C的下标</span>
-                pre <span class="token operator">=</span> i<span class="token punctuation">;</span>
-                <span class="token comment" spellcheck="true">// 从i+1起，下一个C的下标</span>
-                cur <span class="token operator">=</span> S<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>C<span class="token punctuation">,</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
-                <span class="token comment" spellcheck="true">// 取 前一个、当前 位置的字符和C的距离 的最小值</span>
-                res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>pre <span class="token operator">-</span> i<span class="token punctuation">)</span><span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>cur <span class="token operator">-</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -420,7 +398,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://muscleboy.github.io/2020/11/05/hui-lu-chong-zao/">https://muscleboy.github.io/2020/11/05/hui-lu-chong-zao/</a>
+                    <a href="https://muscleboy.github.io/2020/11/04/hui-lu-chong-zao/">https://muscleboy.github.io/2020/11/04/hui-lu-chong-zao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -625,7 +603,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/11/05/hui-lu-chong-zao/">
+                <a href="/2020/11/04/hui-lu-chong-zao/">
                     <div class="card-image">
                         
                         
@@ -637,18 +615,18 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            为了2021的春招，又重新捡起了博客，记录一些成为Top Javaer过程中遇到的坑和事
+                            为了2021的春招，又重新捡起了博客，记录一些成为Top Javaor过程中遇到的坑和事
 剑指offer，LeetCode刷起来
 Java
 Redis
 MySQL
 计网
-代码public static int[] shortestToCha
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-04
                             </span>
                         <span class="publish-author">
                             
@@ -669,7 +647,7 @@ MySQL
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/05/hui-lu-chong-zao/">
+                <a href="/2020/11/04/hui-lu-chong-zao/">
                     <div class="card-image">
                         
                         
@@ -681,18 +659,18 @@ MySQL
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            为了2021的春招，又重新捡起了博客，记录一些成为Top Javaer过程中遇到的坑和事
+                            为了2021的春招，又重新捡起了博客，记录一些成为Top Javaor过程中遇到的坑和事
 剑指offer，LeetCode刷起来
 Java
 Redis
 MySQL
 计网
-代码public static int[] shortestToCha
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-04
                             </span>
                         <span class="publish-author">
                             
@@ -902,7 +880,7 @@ MySQL
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">148</span>&nbsp;字
+                class="white-color">43</span>&nbsp;字
             
             
             
